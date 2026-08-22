@@ -1,0 +1,7 @@
+interface:
+  display_name: "Clarity Bridge"
+  short_description: "Choose the clearest accurate way to explain a question"
+  default_prompt: "Use $clarity-bridge to explain this question clearly without losing accuracy."
+
+policy:
+  allow_implicit_invocation: false
