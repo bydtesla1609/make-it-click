@@ -1,4 +1,4 @@
-# Clarity Bridge behavior checks
+# Make It Click behavior checks
 
 These cases test decisions, not exact wording or a fixed response layout.
 
@@ -6,7 +6,7 @@ These cases test decisions, not exact wording or a fixed response layout.
 
 **Prompt**
 
-> 使用 $clarity-bridge，从空间立体几何的角度讲讲高等代数中求解线性和非线性方程组。
+> 使用 $make-it-click，从空间立体几何的角度讲讲高等代数中求解线性和非线性方程组。
 
 **Expected behavior**
 
@@ -20,7 +20,7 @@ These cases test decisions, not exact wording or a fixed response layout.
 
 **Prompt**
 
-> 使用 $clarity-bridge，SEO 和 GEO 是什么意思？
+> 使用 $make-it-click，SEO 和 GEO 是什么意思？
 
 **Expected behavior**
 
@@ -33,7 +33,7 @@ These cases test decisions, not exact wording or a fixed response layout.
 
 **Prompt**
 
-> 使用 $clarity-bridge，你现在做的项目该怎样降低 AI 味？
+> 使用 $make-it-click，你现在做的项目该怎样降低 AI 味？
 
 **Expected behavior**
 
@@ -46,7 +46,7 @@ These cases test decisions, not exact wording or a fixed response layout.
 
 **Prompt**
 
-> 使用 $clarity-bridge，把量子纠缠解释成两个人提前约好答案，所以测量才总是一致。
+> 使用 $make-it-click，把量子纠缠解释成两个人提前约好答案，所以测量才总是一致。
 
 **Expected behavior**
 
@@ -58,7 +58,7 @@ These cases test decisions, not exact wording or a fixed response layout.
 
 **Prompt**
 
-> 使用 $clarity-bridge，证明根号 2 是无理数，我总看不懂反证法。
+> 使用 $make-it-click，证明根号 2 是无理数，我总看不懂反证法。
 
 **Expected behavior**
 
@@ -71,7 +71,7 @@ These cases test decisions, not exact wording or a fixed response layout.
 
 **Prompt**
 
-> 使用 $clarity-bridge，API 就是程序之间说话的方式吗？
+> 使用 $make-it-click，API 就是程序之间说话的方式吗？
 
 **Expected behavior**
 
@@ -123,7 +123,7 @@ The answer uses `method.concrete-example` with a new set of numbers and a differ
 
 **Expected behavior**
 
-- Do not invoke Clarity Bridge automatically.
+- Do not invoke Make It Click automatically.
 - Ordinary answering behavior remains unchanged unless the user explicitly invokes the Skill.
 
 ## Cross-platform parity

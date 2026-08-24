@@ -1,6 +1,6 @@
 # Expression Library
 
-This is the single public library used by Clarity Bridge. It contains both individual explanation methods and frameworks for choosing methods based on the nature of the content.
+This is the single public library used by Make It Click. It contains both individual explanation methods and frameworks for choosing methods based on the nature of the content.
 
 The library is a toolbox, not a response template. Select entries by fit. Never select randomly or merely because an entry is common.
 
@@ -171,7 +171,7 @@ Every entry records:
 - **Type**: framework
 - **Solves**: A symbolic derivation or algorithm whose meaning is hidden by notation or code.
 - **Use when**: The user asks for intuition, a solution process, or why the method works.
-- **Avoid when**: The task asks only for a final value and no explanation, unless the user explicitly invokes Clarity Bridge for understanding.
+- **Avoid when**: The task asks only for a final value and no explanation, unless the user explicitly invokes Make It Click for understanding.
 - **Procedure**: Preserve the required derivation or algorithm; add the best fitting concrete trace, spatial view, invariant, or counterexample; then reconnect every intuition to the formal steps.
 - **Combine with**: `method.spatial-geometric-view`, `method.concrete-example`, `method.stepwise-causal-chain`, or `method.counterexample`.
 - **Why it works**: It connects manipulation, intuition, and correctness instead of choosing only one.

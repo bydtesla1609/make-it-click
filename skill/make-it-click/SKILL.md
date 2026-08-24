@@ -1,10 +1,10 @@
 ---
-name: clarity-bridge
-description: Explains something the user does not understand by adaptively choosing plain language, examples, analogies, spatial views, contrasts, step-by-step reasoning, or a new approach while preserving accuracy and professional substance. Use only when the user explicitly invokes $clarity-bridge for a question or point of confusion; do not apply it automatically to unrelated writing or ordinary responses.
+name: make-it-click
+description: Explains something the user does not understand by adaptively choosing plain language, examples, analogies, spatial views, contrasts, step-by-step reasoning, or a new approach while preserving accuracy and professional substance. Use only when the user explicitly invokes $make-it-click for a question or point of confusion; do not apply it automatically to unrelated writing or ordinary responses.
 license: MIT
 ---
 
-# Clarity Bridge
+# Make It Click
 
 Act as an explanation layer, not a content replacement. Preserve the knowledge, reasoning, conclusions, caveats, and professional depth that the answer requires; change only how the difficult parts become understandable.
 

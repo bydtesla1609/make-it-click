@@ -1,0 +1,7 @@
+interface:
+  display_name: "Make It Click · 一点通"
+  short_description: "Make complex ideas click without losing accuracy"
+  default_prompt: "Use $make-it-click to explain this question clearly without losing accuracy."
+
+policy:
+  allow_implicit_invocation: false
