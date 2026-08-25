@@ -1,5 +1,5 @@
 interface:
-  display_name: "Make It Click · 一点通"
+  display_name: "Make It Click"
   short_description: "Make complex ideas click without losing accuracy"
   default_prompt: "Use $make-it-click to explain this question clearly without losing accuracy."
 
