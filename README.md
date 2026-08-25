@@ -14,6 +14,7 @@
   <a href="adapters/generic-agent/INSTRUCTIONS.md"><img src="https://img.shields.io/badge/AI-Cross--agent-2563EB" alt="Cross-agent compatible"></a>
   <a href="LICENSE"><img src="https://img.shields.io/github/license/bydtesla1609/make-it-click?color=2563eb" alt="License"></a>
   <a href="https://github.com/bydtesla1609/make-it-click/stargazers"><img src="https://img.shields.io/github/stars/bydtesla1609/make-it-click?style=flat&amp;color=f5a623" alt="GitHub Stars"></a>
+  <a href="metrics/acquisitions.json"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbydtesla1609%2Fmake-it-click%2Fmain%2Fmetrics%2Facquisitions-badge.json&amp;label=%E7%B4%AF%E8%AE%A1%E4%B8%8B%E8%BD%BD" alt="累计下载次数"></a>
 </p>
 
 <p align="center">
@@ -46,6 +47,10 @@ Make It Click 是一个跨 AI 使用的解释型 Skill。它先判断用户究�
 ## ⚡ 快速开始
 
 Make It Click 只能显式调用，而且每次调用只影响当前回答。
+
+如果只想获取核心 Skill，可以直接下载 [`make-it-click-skill.zip`](https://github.com/bydtesla1609/make-it-click/releases/latest/download/make-it-click-skill.zip)。解压后会得到完整的 `make-it-click` 文件夹，再按所用平台放到对应位置即可。
+
+README 顶部的“累计下载”由仓库的完整 Clone 次数与正式 ZIP 的下载次数相加得到。它表示项目被主动获取的次数，不等同于实际安装人数或活跃用户数；[查看公开统计明细](metrics/acquisitions.json)。
 
 ### Codex
 

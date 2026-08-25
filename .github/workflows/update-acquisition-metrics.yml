@@ -1,0 +1,26 @@
+name: Update download metrics
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: download-metrics
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update totals
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TRAFFIC_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
+        run: |
+          script_url="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${GITHUB_SHA}/scripts/update_acquisition_metrics.py"
+          curl --fail --silent --show-error "$script_url" --output "$RUNNER_TEMP/update_clone_metrics.py"
+          python3 "$RUNNER_TEMP/update_clone_metrics.py"
