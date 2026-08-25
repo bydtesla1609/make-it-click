@@ -1,4 +1,4 @@
-# Make It Click
+# Make It Click · 一点通
 
 **不把知识讲浅，而是换个角度，一点就通。**
 
