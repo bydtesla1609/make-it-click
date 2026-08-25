@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/social-preview.jpg" alt="Make It Click：让 AI 说人话" width="960">
+</p>
+
 <h1 align="center">Make It Click · 一点通</h1>
 
 <p align="center">
