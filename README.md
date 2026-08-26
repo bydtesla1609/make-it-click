@@ -10,8 +10,14 @@
 </p>
 
 <p align="center">
+  <a href="skill/make-it-click/SKILL.md"><img src="https://developers.openai.com/favicon.svg" alt="Codex 图标" width="20" height="20"></a>
   <a href="skill/make-it-click/SKILL.md"><img src="https://img.shields.io/badge/Codex-Skill-111827" alt="Codex Skill"></a>
-  <a href="adapters/generic-agent/INSTRUCTIONS.md"><img src="https://img.shields.io/badge/AI-Cross--agent-2563EB" alt="Cross-agent compatible"></a>
+  &nbsp;
+  <a href="adapters/claude-code/README.md"><img src="https://claude.ai/favicon.svg" alt="Claude Code 图标" width="20" height="20"></a>
+  <a href="adapters/claude-code/README.md"><img src="https://img.shields.io/badge/Claude_Code-Compatible-D97757" alt="Claude Code Compatible"></a>
+  &nbsp;
+  <a href="adapters/deepseek/README.md"><img src="https://www.deepseek.com/favicon.ico" alt="DeepSeek 图标" width="20" height="20"></a>
+  <a href="adapters/deepseek/README.md"><img src="https://img.shields.io/badge/DeepSeek-Compatible-4D6BFE" alt="DeepSeek Compatible"></a>
   <a href="LICENSE"><img src="https://img.shields.io/github/license/bydtesla1609/make-it-click?color=2563eb" alt="License"></a>
   <a href="https://github.com/bydtesla1609/make-it-click/stargazers"><img src="https://img.shields.io/github/stars/bydtesla1609/make-it-click?style=flat&amp;color=f5a623" alt="GitHub Stars"></a>
   <a href="metrics/acquisitions.json"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbydtesla1609%2Fmake-it-click%2Fmain%2Fmetrics%2Facquisitions-badge.json&amp;label=%E7%B4%AF%E8%AE%A1%E4%B8%8B%E8%BD%BD" alt="累计下载次数"></a>
@@ -52,31 +58,36 @@ Make It Click 只能显式调用，而且每次调用只影响当前回答。
 
 README 顶部的“累计下载”由仓库的完整 Clone 次数与正式 ZIP 的下载次数相加得到。它表示项目被主动获取的次数，不等同于实际安装人数或活跃用户数；[查看公开统计明细](metrics/acquisitions.json)。
 
-### Codex
+### <img src="https://developers.openai.com/favicon.svg" alt="Codex 图标" width="22" height="22"> Codex
 
-将 [`skill/make-it-click`](skill/make-it-click) 复制到：
+将 [`skill/make-it-click`](skill/make-it-click) 复制到 Codex 的个人 Skill 目录：
 
 ```text
 $CODEX_HOME/skills/make-it-click
 ```
 
-重新加载 Skill 后调用：
+重新加载 Skill 后显式调用：
 
 ```text
 使用 $make-it-click，从空间立体几何的角度讲讲线性和非线性方程组。
 ```
 
-### Claude Code
+### <img src="https://claude.ai/favicon.svg" alt="Claude Code 图标" width="22" height="22"> Claude Code
 
-将同一目录复制到个人或项目 Skill 目录：
+Claude Code 支持读取 `SKILL.md`。将 [`skill/make-it-click`](skill/make-it-click) 复制到以下任一位置：
 
-```text
-~/.claude/skills/make-it-click/
-```
+- 个人级：`~/.claude/skills/make-it-click/`
+- 项目级：`.claude/skills/make-it-click/`
 
-### 其他 AI 或 Agent
+在 `/skills` 中将 `make-it-click` 设为 `user-only`，然后输入 `/make-it-click` 显式调用。具体说明见 [Claude Code 适配指南](adapters/claude-code/README.md)。
 
-不支持文件式 Skill 时，将 [`SKILL.md`](skill/make-it-click/SKILL.md) 作为当前请求的 system 或 developer 指令，并按需提供表达库。加载顺序见 [通用适配说明](adapters/generic-agent/INSTRUCTIONS.md)。
+### <img src="https://www.deepseek.com/favicon.ico" alt="DeepSeek 图标" width="22" height="22"> DeepSeek
+
+DeepSeek API 没有相同的文件式 Skill 发现机制。使用 DeepSeek API 或支持 system prompt 的客户端时，将 [`SKILL.md`](skill/make-it-click/SKILL.md) 与 [`expression-library.md`](skill/make-it-click/references/expression-library.md) 的完整内容放入首条 `system` 消息，再把实际问题作为 `user` 消息发送。具体说明见 [DeepSeek 适配指南](adapters/deepseek/README.md)。
+
+> 三个平台共用同一份核心 Skill。适配指南说明的是加载方式，不代表已经对所有客户端版本做过相同的实时效果测试。
+
+其他 AI 或 Agent 可以参考 [通用适配说明](adapters/generic-agent/INSTRUCTIONS.md)。
 
 ## 📝 使用示例
 
